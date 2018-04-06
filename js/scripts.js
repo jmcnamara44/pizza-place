@@ -13,6 +13,18 @@ $(document).ready(function() {
   $("form#pizza-order").submit(function(event) {
     event.preventDefault();
 
+    var pizzaSize = function() {
+      if (checkedSize === 10) {
+        return "Small";
+      } else if (checkedSize === 14) {
+        return "Medium";
+      } else if (checkedSize === 18) {
+        return "Large";
+      } else {
+        return "Please make a valid selection";
+      }
+    }
+
     var finalToppings = [];
     $("input:checkbox[name=toppings]:checked").each(function() {
       var checkedToppings = $(this).val();
@@ -23,6 +35,10 @@ $(document).ready(function() {
     var newPizza = new Pizza(finalToppings, checkedSize);
 
     $("#final-price").text(newPizza.price())
-    $("#price").show();
+    $("#summary").show();
+    $("#pizza-size").text(pizzaSize());
+    $("#pizza-toppings").text(finalToppings.forEach(function() {
+      finalToppings.toUpperCase;
+    }));
   });
 });

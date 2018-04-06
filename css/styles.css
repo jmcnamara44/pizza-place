@@ -1,3 +1,15 @@
-#price {
+body {
+  background-color: #FF7468;
+}
+
+h1 {
+  text-align: center;
+}
+
+#review-order {
+  text-align: center;
+}
+
+#summary {
   display: none;
 }

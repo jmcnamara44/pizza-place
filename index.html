@@ -10,25 +10,40 @@
   <body>
     <div class="container">
       <h1>Jimmy's Pizza Emporium</h1>
+      <hr>
+      <h3>Pizzas come with red sauce and cheese.  Additional toppings can be added for $1 each. </h2>
+
       <form id="pizza-order">
         <h4>Select which size pizza you would like.</h4>
+
         <select class="form-control" id="size">
           <option value="0"></option>
           <option value="10">Small (12'')</option>
           <option value="14">Medium (14'')</option>
           <option value="18">Large (16'')</option>
         </select>
-        <h4>Choose your toppings (check all that apply)</h4>
-        <input type="checkbox" name="toppings" value="sausage">Sausage
-        <input type="checkbox" name="toppings" value="pepperonni">Pepperonni
-        <input type="checkbox" name="toppings" value="pineapple">Pineapple
+
+        <h4>Please choose from the following options if you would like to add a topping (check all that apply)</h4>
+        <input type="checkbox" name="toppings" value="extra-cheese">Extra Cheese<br>
+        <input type="checkbox" name="toppings" value="sausage">Sausage<br>
+        <input type="checkbox" name="toppings" value="chicken">Chicken<br>
+        <input type="checkbox" name="toppings" value="anchovy">Anchovies<br>
+        <input type="checkbox" name="toppings" value="sausage">Sausage<br>
+        <input type="checkbox" name="toppings" value="pepperonni">Pepperonni<br>
+        <input type="checkbox" name="toppings" value="pineapple">Pineapple<br>
         <input type="checkbox" name="toppings" value="beets">Beets<br>
 
         <button class="btn btn-primary" id="review-order" type="submit">Review Order</button>
         <button class="btn btn-warning" id="add-pizza">Add another pizza</button>
       </form>
 
-      <p id="price">Your order total is $<span id="final-price"></span></p>
+      <div id="summary">
+        <p>Please review your order below and make sure it is correct. Your order total is $<span id="final-price"></span></p>
+        <ul>
+          <li>Size: <span id="pizza-size"></span></li>
+          <li>Toppings: Cheese,  <span id="pizza-toppings"></span></li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
