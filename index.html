@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Place</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jimmy's Pizza Emporium</h1>
+      <form id="pizza-order">
+        <h4>Select which size pizza you would like.</h4>
+        <select class="form-control" id="size">
+          <option value="0"></option>
+          <option value="1">Small (12'')</option>
+          <option value="2">Medium (14'')</option>
+          <option value="3">Large (16'')</option>
+        </select>
+        <h4>Choose your toppings (check all that apply)</h4>
+        <input type="checkbox" name="toppings" value="cheese">Cheese
+        <input type="checkbox" name="toppings" value="pepperonni">Pepperonni
+        <input type="checkbox" name="toppings" value="pineapple">Pineapple
+        <input type="checkbox" name="toppings" value="beets">Beets<br>
+        <button class="btn btn-primary" id="review-order" type="submit">Review Order</button>
+        <button class="btn btn-warning" id="add-pizza">Add another pizza</button>
+      </form>
+    </div>
+  </body>
+</html>
