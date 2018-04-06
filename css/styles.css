@@ -1,5 +1,7 @@
 body {
   background-color: #FF7468;
+  /* background-image: url("../img/pizza.jpg"); */
+  /* I tried to add an image but could not get the text to be readable with the background image.  I tried to use outline but I think it would only outline the body and not the text within it. */
 }
 
 h1 {
@@ -7,9 +9,20 @@ h1 {
 }
 
 #review-order {
-  text-align: center;
+  /* text-align: center; */
+  /* trying to center the buttons but not able to do it. */
+}
+
+#result {
+  display: none;
 }
 
 #summary {
   display: none;
+}
+
+#final-price {
+  cursor: pointer;
+  color: #0088cc;
+
 }

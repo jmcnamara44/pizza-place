@@ -34,15 +34,17 @@
         <input type="checkbox" name="toppings" value="beets">Beets<br>
 
         <button class="btn btn-primary" id="review-order" type="submit">Review Order</button>
-        <button class="btn btn-warning" id="add-pizza">Add another pizza</button>
+        <!-- <button class="btn btn-warning" id="add-pizza">Add another pizza</button> -->
+        <!-- will try to add -->
       </form>
 
+      <div id="result">
+        <h3>Your order total is $<span id="final-price"></span></h3>
+      </div>
+
       <div id="summary">
-        <p>Please review your order below and make sure it is correct. Your order total is $<span id="final-price"></span></p>
-        <ul>
-          <li>Size: <span id="pizza-size"></span></li>
-          <li>Toppings: Cheese,  <span id="pizza-toppings"></span></li>
-        </ul>
+        <p>Pizza size: <span id="pizza-size"></span></p>
+        <p>Pizza toppings: <span id="pizza-toppings"></span></p>
       </div>
     </div>
   </body>
